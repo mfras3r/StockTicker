@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("StockTicker.Library")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Library for the SignalR Stock Ticker using the Unity IoC.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Michael T. Fraser")]
 [assembly: AssemblyProduct("StockTicker.Library")]
 [assembly: AssemblyCopyright("Copyright ©  2015")]
 [assembly: AssemblyTrademark("")]
