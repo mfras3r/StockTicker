@@ -14,6 +14,11 @@ namespace StockTicker.Web.App_Start
 				url: "",
 				defaults: new { controller = "Default", action = "Index", area = "Web" }
 			);
+			routes.MapRoute(
+				name: "Angular",
+				url: "Angular",
+				defaults: new {controller = "Default", action = "Angular", area = "Web"}
+			);
 		}
 	}
 }

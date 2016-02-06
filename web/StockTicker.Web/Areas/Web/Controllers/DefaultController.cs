@@ -9,5 +9,10 @@ namespace StockTicker.Web.Areas.Web.Controllers
         {
             return View("~/Areas/Web/Views/Default/Index.cshtml");
         }
+
+		public ActionResult Angular()
+		{
+			return View("~/Areas/Web/Views/Default/Angular.cshtml");
+		}
     }
 }

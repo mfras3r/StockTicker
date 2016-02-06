@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Angular";
+}
+
+<h2>Angular</h2>
+
+<div ng-app="stockTicker" ng-controller="StockController">
+	<table>
+		<thead>
+		<tr>
+			<th>Symbol</th>
+			<th>Price</th>
+			<th>Open</th>
+			<th>Change</th>
+			<th>%</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr class="loading" ng-hide="stocks">
+			<td colspan="5">loading...</td>
+		</tr>
+		<tr ng-repeat="(symbol, stock) in stocks">
+			<td>{{symbol}}</td>
+			<td>{{stock.price | currency}}</td>
+			<td>{{stock.open | currency}}</td>
+			<td>{{stock.direction}} {{stock.change | currency}}</td>
+			<td>{{stock.percentChange | percentage}}</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+
+@section EndScripts
+{
+	<script src="~/Scripts/stock-ticker.js"></script>
+}
